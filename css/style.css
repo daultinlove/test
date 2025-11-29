@@ -24,6 +24,121 @@ body {
   --bg-panel: #111318;
   --border-soft: #262a36;
 }
+/* ====== THEME VARIATIONS & DEMO FLAIR ====== */
+
+/* Default theme is already defined by :root.
+   These override colors & background per demo. */
+
+body.theme-barber {
+  --brand-blue: #4f46e5;
+  --brand-blue-dark: #312e81;
+  --brand-cream: #fef9c3;
+  --brand-brown: #1f2937;
+  --accent-gold: #f97316;
+  --bg-dark: #020617;
+  --bg-panel: #020617;
+  background:
+    radial-gradient(circle at 0 0, rgba(79,70,229,0.28), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(249,115,22,0.24), transparent 55%),
+    #020617;
+}
+
+/* Warm, cozy restaurant theme */
+body.theme-restaurant {
+  --brand-blue: #ea580c;       /* becomes accent orange */
+  --brand-blue-dark: #9a3412;
+  --brand-cream: #fff7ed;
+  --brand-brown: #3b2f2a;
+  --accent-gold: #facc15;
+  --bg-dark: #0b0710;
+  --bg-panel: #181118;
+  background:
+    radial-gradient(circle at 0 0, rgba(234,88,12,0.3), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(234,179,8,0.24), transparent 55%),
+    #0b0710;
+}
+
+/* Clean teal / violet coach theme */
+body.theme-coach {
+  --brand-blue: #22c55e;
+  --brand-blue-dark: #15803d;
+  --brand-cream: #ecfeff;
+  --brand-brown: #0f172a;
+  --accent-gold: #38bdf8;
+  --bg-dark: #020617;
+  --bg-panel: #020617;
+  background:
+    radial-gradient(circle at 0 0, rgba(56,189,248,0.38), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(34,197,94,0.3), transparent 55%),
+    #020617;
+}
+
+/* Extra flair for hero cards on demos */
+.hero-card--framed {
+  border-radius: 1.75rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.9);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-card--framed::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(circle at 0 0, rgba(255,255,255,0.06), transparent 65%);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.hero-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.7rem;
+}
+
+.hero-chip {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.14);
+  opacity: 0.9;
+}
+
+/* Slightly different hero layout for restaurant/coach */
+.hero--split .hero-grid {
+  align-items: flex-start;
+}
+
+.hero--centered {
+  text-align: center;
+}
+
+.hero--centered .hero-grid {
+  display: block;
+}
+
+.hero--centered .hero-actions {
+  justify-content: center;
+}
+
+.hero--centered .hero-tagline {
+  text-align: center;
+}
+
+/* Optional: subtle card border difference for restaurant */
+body.theme-restaurant .pricing-card {
+  border-radius: 1.3rem;
+  border-color: rgba(250,204,21,0.25);
+}
+
+/* Optional: premium look for coach cards */
+body.theme-coach .pricing-card--highlight {
+  background: radial-gradient(circle at 0 0, rgba(56,189,248,0.22), transparent 60%),
+              radial-gradient(circle at 100% 100%, rgba(34,197,94,0.22), transparent 60%),
+              var(--bg-panel);
+}
 
 /* ====== LAYOUT ====== */
 .container {
