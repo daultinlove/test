@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="theme-barber">
 <header>
   <div class="container nav">
     <div class="nav-logo">
@@ -24,37 +24,46 @@
 
 <main>
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero hero--split">
     <div class="container hero-grid">
       <div>
-        <div class="hero-kicker">Neighborhood barbershop</div>
+        <div class="hero-kicker">Neighborhood barbershop • Burleson, TX</div>
         <h1 class="hero-title">
-          Clean cuts. Good fades. <span>No nonsense.</span>
+          Clean fades. Sharp lines. <span>Zero fluff.</span>
         </h1>
         <p class="hero-subtitle">
-          Main Street Barber Co. is your local spot for sharp fades, classic cuts, and beard trims.
-          Walk in or text ahead—just don’t show up with a hat on.
+          Main Street Barber Co. is your go-to shop for fresh fades, beard work, and that
+          “feel like yourself again” cut. Walk-ins welcome, text-ahead recommended.
         </p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">Book a chair</a>
-          <a href="#services" class="btn btn-outline">View services</a>
+          <a href="#services" class="btn btn-outline">See prices</a>
         </div>
-        <p class="hero-tagline">
-          Located in the historic Main Street district • Walk-ins welcome • Cash & card accepted
-        </p>
+        <div class="hero-chip-row">
+          <div class="hero-chip">Skin fades</div>
+          <div class="hero-chip">Beard trims</div>
+          <div class="hero-chip">Kids cuts</div>
+          <div class="hero-chip">Walk-ins welcome</div>
+        </div>
       </div>
 
-      <aside class="hero-card">
-        <div class="hero-card-tag">Today’s hours</div>
-        <h2 class="hero-card-title">Open 9am – 6pm</h2>
+      <aside class="hero-card hero-card--framed">
+        <div class="hero-card-tag">Today’s status</div>
+        <h2 class="hero-card-title">Chairs are open.</h2>
         <p>
-          214 Main Street  
-          Suite B  
-          Burleson, TX
+          214 Main Street<br />
+          Suite B<br />
+          Burleson, TX 76028
         </p>
-        <p style="margin-top: 0.7rem; font-size: 0.9rem;">
-          Call / Text: <strong>(555) 123-0199</strong>
+        <p style="margin-top: 0.9rem; font-size: 0.9rem;">
+          Call / Text: <strong>(555) 123-0199</strong><br />
+          Instagram: <strong>@mainstreetbarberco</strong>
         </p>
+        <div class="hero-chip-row" style="margin-top: 1rem;">
+          <div class="hero-chip">Walk-ins</div>
+          <div class="hero-chip">Cash & card</div>
+          <div class="hero-chip">Free parking</div>
+        </div>
       </aside>
     </div>
   </section>
@@ -63,42 +72,43 @@
   <section id="services" class="section">
     <div class="container">
       <div class="section-kicker">Services</div>
-      <h2 class="section-heading">Cuts & trims we offer.</h2>
+      <h2 class="section-heading">Cuts & trims with straight-up pricing.</h2>
       <p class="section-subtitle">
-        Straightforward pricing. No hidden fees. Just solid work and a good conversation if you want one.
+        No packages, no upsell scripts—just solid work. Pay for what you need, tip if we earned it.
       </p>
 
       <div class="pricing-grid">
         <article class="pricing-card">
-          <div class="pricing-name">Classic</div>
+          <div class="pricing-name">Everyday</div>
           <h3 class="pricing-title">Standard Cut</h3>
-          <p class="pricing-price">$25 <span>approx. 30 mins</span></p>
+          <p class="pricing-price">$25 <span>30 minutes</span></p>
           <ul class="pricing-list">
             <li>Scissor or clipper cut</li>
-            <li>Neck shave & clean-up</li>
-            <li>Style to finish</li>
+            <li>Neck shave & styling</li>
+            <li>Hot towel finish on request</li>
           </ul>
         </article>
 
-        <article class="pricing-card">
+        <article class="pricing-card pricing-card--highlight">
+          <div class="pricing-badge">Most booked</div>
           <div class="pricing-name">Fade</div>
-          <h3 class="pricing-title">Skin & Taper Fades</h3>
-          <p class="pricing-price">$30 <span>approx. 40 mins</span></p>
+          <h3 class="pricing-title">Skin / Taper Fade</h3>
+          <p class="pricing-price">$30 <span>40 minutes</span></p>
           <ul class="pricing-list">
-            <li>Skin fades, low / mid / high</li>
-            <li>Blended to your style</li>
-            <li>Hot lather neck shave</li>
+            <li>Low, mid, or high fade</li>
+            <li>Blend tailored to your style</li>
+            <li>Razor clean-up included</li>
           </ul>
         </article>
 
         <article class="pricing-card">
           <div class="pricing-name">Beard</div>
-          <h3 class="pricing-title">Beard Trim</h3>
+          <h3 class="pricing-title">Beard Trim & Line-Up</h3>
           <p class="pricing-price">$18 <span>standalone</span></p>
           <ul class="pricing-list">
-            <li>Shape & line-up</li>
-            <li>Trimmer + straight razor</li>
-            <li>Optional hot towel finish</li>
+            <li>Shape & sculpt</li>
+            <li>Cheek & neck line</li>
+            <li>Can be added to any cut</li>
           </ul>
         </article>
       </div>
@@ -109,15 +119,12 @@
   <section id="hours" class="section">
     <div class="container">
       <div class="section-kicker">Visit</div>
-      <h2 class="section-heading">Hours & location.</h2>
-      <p class="section-subtitle">
-        Drop in after work, swing by on the weekend, or text ahead to see how busy the shop is.
-      </p>
+      <h2 class="section-heading">Shop hours & directions.</h2>
 
       <div class="portfolio-grid">
         <article class="portfolio-card">
           <div class="portfolio-label">Hours</div>
-          <h3>Shop hours</h3>
+          <h3>When we’re cutting</h3>
           <p>
             Mon–Thu: 9:00am – 6:00pm<br />
             Friday: 9:00am – 7:00pm<br />
@@ -128,15 +135,14 @@
 
         <article class="portfolio-card">
           <div class="portfolio-label">Location</div>
-          <h3>Find us</h3>
+          <h3>Pull up</h3>
           <p>
             214 Main Street, Suite B<br />
             Burleson, TX 76028<br />
             Free parking behind the building.
           </p>
           <p style="margin-top: 0.8rem;">
-            Call / Text: <strong>(555) 123-0199</strong><br />
-            Instagram: @mainstreetbarberco
+            Tap-to-call: <strong>(555) 123-0199</strong>
           </p>
         </article>
       </div>
@@ -149,7 +155,7 @@
       <div class="section-kicker">Book</div>
       <h2 class="section-heading">Grab a spot in the chair.</h2>
       <p class="section-subtitle">
-        Send a quick message with your name, what you’re looking for, and when you’d like to come in.
+        Drop your info and what you’re looking for. We’ll text back to confirm a time.
       </p>
 
       <form>
@@ -159,17 +165,17 @@
         </div>
         <div>
           <label for="c-phone">Phone</label>
-          <input id="c-phone" type="tel" placeholder="Best number to reach you" />
+          <input id="c-phone" type="tel" placeholder="Best number to text" />
         </div>
         <div>
           <label for="c-time">Preferred day & time</label>
           <input id="c-time" type="text" placeholder="Example: Friday after 4pm" />
         </div>
         <div>
-          <label for="c-msg">What are you looking for?</label>
+          <label for="c-msg">What are you coming in for?</label>
           <textarea id="c-msg" placeholder="Example: Skin fade + beard trim."></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Send request</button>
+        <button type="submit" class="btn btn-primary">Request appointment</button>
       </form>
     </div>
   </section>
@@ -182,4 +188,3 @@
 </footer>
 </body>
 </html>
-
