@@ -1,0 +1,8 @@
+Love-Crafterd-Digital/
+│
+├─ index.html                <-- main Love Crafted Digital site (see B)
+├─ demo-starter.html         <-- Starter demo site
+├─ demo-standard.html        <-- Standard demo site
+├─ demo-premium.html         <-- Premium demo site
+└─ css/
+   └─ style.css              <-- shared styles for all pages
