@@ -2,104 +2,215 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Standard Demo — Love Crafted Digital</title>
+  <title>Oak &amp; Ember Kitchen — Standard Demo | Love Crafted Digital</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="theme-restaurant">
 <header>
   <div class="container nav">
     <div class="nav-logo">
-      <div class="nav-logo-badge">LC</div>
-      <span>Love Crafted Digital</span>
+      <div class="nav-logo-badge">OE</div>
+      <span>Oak &amp; Ember Kitchen</span>
     </div>
     <nav class="nav-links">
-      <a href="index.html">Back to Site</a>
+      <a href="#menu">Menu</a>
+      <a href="#story">Our Story</a>
+      <a href="#visit">Visit</a>
+      <a href="#contact">Reservations</a>
+      <a href="index.html">Back to Love Crafted</a>
     </nav>
   </div>
 </header>
 
 <main>
-  <section class="hero">
+  <!-- HERO -->
+  <section class="hero hero--split">
     <div class="container hero-grid">
       <div>
-        <div class="hero-kicker">Standard Demo</div>
-        <h1 class="hero-title">Modern website for a <span>neighborhood restaurant.</span></h1>
+        <div class="hero-kicker">Wood-fired neighborhood kitchen</div>
+        <h1 class="hero-title">
+          Smoke, fire, and <span>slow-evening dinners.</span>
+        </h1>
         <p class="hero-subtitle">
-          This is a preview of the $650 Standard package—multiple sections, better visuals, and space
-          for menus, photos, and story.
+          Oak &amp; Ember Kitchen pairs oak-smoked mains with seasonal sides, craft cocktails, and
+          the kind of room you actually want to linger in.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Book a table</a>
+          <a href="#menu" class="btn btn-outline">View sample menu</a>
+        </div>
+        <p class="hero-tagline">
+          Dinner service • Weekend brunch • Large party reservations available.
         </p>
       </div>
-      <div class="hero-card">
-        <div class="hero-card-tag">Demo layout</div>
-        <h2 class="hero-card-title">“Oak & Ember Kitchen”</h2>
-        <p>Homepage with hero banner, featured dishes, hours, reservations button, and Google map.</p>
+
+      <aside class="hero-card hero-card--framed">
+        <div class="hero-card-tag">Tonight’s feature</div>
+        <h2 class="hero-card-title">Ember Ribeye &amp; Chimichurri</h2>
+        <p>
+          14oz ribeye kissed by oak fire, charred lemon, roasted garlic mash, and house chimichurri.
+        </p>
+        <div class="hero-chip-row" style="margin-top: 0.9rem;">
+          <div class="hero-chip">Local beef</div>
+          <div class="hero-chip">Cooked over oak</div>
+          <div class="hero-chip">Pairs with the Ember Old Fashioned</div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="section">
+    <div class="container">
+      <div class="section-kicker">Menu</div>
+      <h2 class="section-heading">A few favorites from the line.</h2>
+      <p class="section-subtitle">
+        The full menu changes with the season. Here’s a quick look at what’s coming off the fire.
+      </p>
+
+      <div class="pricing-grid">
+        <article class="pricing-card">
+          <div class="pricing-name">Share</div>
+          <h3 class="pricing-title">Starters</h3>
+          <ul class="pricing-list">
+            <li>Smoked Queso Skillet — $11</li>
+            <li>Charred Brussels &amp; Bacon — $12</li>
+            <li>Ember Wings (6) — $13</li>
+          </ul>
+        </article>
+
+        <article class="pricing-card pricing-card--highlight">
+          <div class="pricing-badge">From the fire</div>
+          <div class="pricing-name">Mains</div>
+          <h3 class="pricing-title">Plates</h3>
+          <ul class="pricing-list">
+            <li>Ember Ribeye — $32</li>
+            <li>Oak-Smoked Half Chicken — $24</li>
+            <li>Brisket Mac &amp; Cheese — $19</li>
+          </ul>
+        </article>
+
+        <article class="pricing-card">
+          <div class="pricing-name">Weekend</div>
+          <h3 class="pricing-title">Brunch</h3>
+          <ul class="pricing-list">
+            <li>Smoked Sausage Hash — $17</li>
+            <li>Cast-Iron Cinnamon Roll — $10</li>
+            <li>House Bloody Mary — $9</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <!-- STORY -->
+  <section id="story" class="section">
     <div class="container">
-      <div class="section-kicker">Sections</div>
-      <h2 class="section-heading">What this layout includes</h2>
+      <div class="section-kicker">Our story</div>
+      <h2 class="section-heading">Built from backyard cookouts and late-night ideas.</h2>
+      <p class="section-subtitle">
+        Oak &amp; Ember started as a backyard smoker, beat-up picnic tables, and a whole lot of
+        “you should open a restaurant.” We finally did—with all the smoke and none of the folding chairs.
+      </p>
 
       <div class="portfolio-grid">
         <article class="portfolio-card">
-          <div class="portfolio-label">Hero</div>
-          <h3>Big photo, clear headline</h3>
-          <p>Feature your best food shot and a call-to-action: “Book a table” or “Order online.”</p>
+          <div class="portfolio-label">Kitchen</div>
+          <h3>Fire at the center</h3>
+          <p>
+            From ribeye to carrots, most things spend time over oak. Expect char, smoke, and a little
+            bit of Texas in every plate.
+          </p>
         </article>
 
         <article class="portfolio-card">
-          <div class="portfolio-label">Menu</div>
-          <h3>Featured dishes</h3>
-          <p>Three–six popular items with prices and short descriptions. Full menu can link to PDF.</p>
+          <div class="portfolio-label">Bar</div>
+          <h3>Cocktails &amp; spirits</h3>
+          <p>
+            Whiskey-forward cocktails, local beers, and N/A drinks that are more interesting than soda.
+          </p>
         </article>
 
         <article class="portfolio-card">
-          <div class="portfolio-label">About</div>
-          <h3>Story section</h3>
-          <p>Tell how the restaurant started, what makes it unique, and why locals love it.</p>
-        </article>
-
-        <article class="portfolio-card">
-          <div class="portfolio-label">Visit</div>
-          <h3>Hours & location</h3>
-          <p>Map embed, parking info, phone number, and hours—all above the fold for convenience.</p>
+          <div class="portfolio-label">Gather</div>
+          <h3>Groups &amp; events</h3>
+          <p>
+            From birthdays to buyouts, we host groups with family-style service and custom menus built
+            around your people.
+          </p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="section" id="contact">
+  <!-- VISIT -->
+  <section id="visit" class="section">
     <div class="container">
-      <div class="section-kicker">Demo contact</div>
-      <h2 class="section-heading">Reservation & catering form</h2>
+      <div class="section-kicker">Visit</div>
+      <h2 class="section-heading">Where to find us.</h2>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <div class="portfolio-label">Hours</div>
+          <h3>Kitchen hours</h3>
+          <p>
+            Mon–Thu: 4:00pm – 10:00pm<br />
+            Friday: 4:00pm – 11:00pm<br />
+            Saturday: 10:00am – 11:00pm<br />
+            Sunday: 10:00am – 9:00pm
+          </p>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-label">Location</div>
+          <h3>Address</h3>
+          <p>
+            88 Ember Lane<br />
+            Fort Worth, TX 76104<br />
+            Parking lot behind the building.
+          </p>
+          <p style="margin-top: 0.8rem;">
+            Phone: <strong>(555) 321-8844</strong><br />
+            Instagram: <strong>@oakandemberkitchen</strong>
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / RESERVATIONS -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-kicker">Reserve</div>
+      <h2 class="section-heading">Book a table or plan a night.</h2>
       <p class="section-subtitle">
-        Standard sites come with a contact form tailored to your business—reservations, catering, or general inquiries.
+        Use the form below to request a reservation or ask about hosting a group. We’ll reply as soon
+        as we step away from the line.
       </p>
+
       <form>
         <div>
-          <label for="name">Name</label>
-          <input id="name" type="text" placeholder="Your name" />
+          <label for="r-name">Name</label>
+          <input id="r-name" type="text" placeholder="Your name" />
         </div>
         <div>
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="you@example.com" />
+          <label for="r-email">Email</label>
+          <input id="r-email" type="email" placeholder="you@example.com" />
         </div>
         <div>
-          <label for="type">Inquiry type</label>
-          <select id="type">
-            <option>Reservation</option>
-            <option>Catering</option>
-            <option>General question</option>
-          </select>
+          <label for="r-size">Party size</label>
+          <input id="r-size" type="number" placeholder="4" />
         </div>
         <div>
-          <label for="message">Details</label>
-          <textarea id="message" placeholder="Tell us about your request."></textarea>
+          <label for="r-date">Preferred date &amp; time</label>
+          <input id="r-date" type="text" placeholder="Example: Saturday, 7:30pm" />
         </div>
-        <button class="btn btn-primary" type="submit">Send</button>
+        <div>
+          <label for="r-msg">Details</label>
+          <textarea id="r-msg" placeholder="Special occasion, allergies, etc."></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit request</button>
       </form>
     </div>
   </section>
@@ -107,8 +218,9 @@
 
 <footer>
   <div class="container">
-    Standard demo by Love Crafted Digital.
+    Standard demo site designed by Love Crafted Digital for demonstration purposes.
   </div>
 </footer>
 </body>
 </html>
+
