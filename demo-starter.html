@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Starter Demo — Love Crafted Digital</title>
+  <title>Main Street Barber Co. — Starter Demo | Love Crafted Digital</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -10,91 +10,176 @@
 <header>
   <div class="container nav">
     <div class="nav-logo">
-      <div class="nav-logo-badge">LC</div>
-      <span>Love Crafted Digital</span>
+      <div class="nav-logo-badge">MS</div>
+      <span>Main Street Barber Co.</span>
     </div>
     <nav class="nav-links">
-      <a href="index.html">Back to Site</a>
+      <a href="#services">Services</a>
+      <a href="#hours">Hours</a>
+      <a href="#contact">Contact</a>
+      <a href="index.html">Back to Love Crafted</a>
     </nav>
   </div>
 </header>
 
 <main>
+  <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <div class="hero-kicker">Starter Demo</div>
-        <h1 class="hero-title">Simple, clean site for <span>local businesses</span>.</h1>
+        <div class="hero-kicker">Neighborhood barbershop</div>
+        <h1 class="hero-title">
+          Clean cuts. Good fades. <span>No nonsense.</span>
+        </h1>
         <p class="hero-subtitle">
-          This is what a $350 Starter package can look like—fast, mobile-friendly and focused on
-          getting customers to call, text, or visit.
+          Main Street Barber Co. is your local spot for sharp fades, classic cuts, and beard trims.
+          Walk in or text ahead—just don’t show up with a hat on.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Book a chair</a>
+          <a href="#services" class="btn btn-outline">View services</a>
+        </div>
+        <p class="hero-tagline">
+          Located in the historic Main Street district • Walk-ins welcome • Cash & card accepted
         </p>
       </div>
-      <div class="hero-card">
-        <div class="hero-card-tag">Demo layout</div>
-        <h2 class="hero-card-title">“Main Street Barbers”</h2>
-        <p>One-page site for a neighborhood barbershop. Clear hours, services, and a big call now button.</p>
+
+      <aside class="hero-card">
+        <div class="hero-card-tag">Today’s hours</div>
+        <h2 class="hero-card-title">Open 9am – 6pm</h2>
+        <p>
+          214 Main Street  
+          Suite B  
+          Burleson, TX
+        </p>
+        <p style="margin-top: 0.7rem; font-size: 0.9rem;">
+          Call / Text: <strong>(555) 123-0199</strong>
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-kicker">Services</div>
+      <h2 class="section-heading">Cuts & trims we offer.</h2>
+      <p class="section-subtitle">
+        Straightforward pricing. No hidden fees. Just solid work and a good conversation if you want one.
+      </p>
+
+      <div class="pricing-grid">
+        <article class="pricing-card">
+          <div class="pricing-name">Classic</div>
+          <h3 class="pricing-title">Standard Cut</h3>
+          <p class="pricing-price">$25 <span>approx. 30 mins</span></p>
+          <ul class="pricing-list">
+            <li>Scissor or clipper cut</li>
+            <li>Neck shave & clean-up</li>
+            <li>Style to finish</li>
+          </ul>
+        </article>
+
+        <article class="pricing-card">
+          <div class="pricing-name">Fade</div>
+          <h3 class="pricing-title">Skin & Taper Fades</h3>
+          <p class="pricing-price">$30 <span>approx. 40 mins</span></p>
+          <ul class="pricing-list">
+            <li>Skin fades, low / mid / high</li>
+            <li>Blended to your style</li>
+            <li>Hot lather neck shave</li>
+          </ul>
+        </article>
+
+        <article class="pricing-card">
+          <div class="pricing-name">Beard</div>
+          <h3 class="pricing-title">Beard Trim</h3>
+          <p class="pricing-price">$18 <span>standalone</span></p>
+          <ul class="pricing-list">
+            <li>Shape & line-up</li>
+            <li>Trimmer + straight razor</li>
+            <li>Optional hot towel finish</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <!-- HOURS & LOCATION -->
+  <section id="hours" class="section">
     <div class="container">
-      <div class="section-heading">Hero Section</div>
+      <div class="section-kicker">Visit</div>
+      <h2 class="section-heading">Hours & location.</h2>
       <p class="section-subtitle">
-        Straight to the point—who you are, what you do, and how to contact you.
+        Drop in after work, swing by on the weekend, or text ahead to see how busy the shop is.
       </p>
 
-      <div class="section" style="padding-top: 2rem;">
-        <h2 class="section-heading">Services & Pricing</h2>
-        <p class="section-subtitle">
-          Simple list of services and starting prices. Easy for customers to scan.
-        </p>
-        <ul class="pricing-list" style="margin-top: 1rem;">
-          <li>Haircuts</li>
-          <li>Beard trims</li>
-          <li>Kids cuts</li>
-          <li>Walk-ins and appointments</li>
-        </ul>
-      </div>
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <div class="portfolio-label">Hours</div>
+          <h3>Shop hours</h3>
+          <p>
+            Mon–Thu: 9:00am – 6:00pm<br />
+            Friday: 9:00am – 7:00pm<br />
+            Saturday: 9:00am – 3:00pm<br />
+            Sunday: Closed
+          </p>
+        </article>
 
-      <div class="section" style="padding-top: 2rem;">
-        <h2 class="section-heading">Location & Contact</h2>
-        <p class="section-subtitle">
-          Map embed, address, phone number, click-to-call button, and hours.
-        </p>
-        <a href="#contact" class="btn btn-primary" style="margin-top: 1rem;">Scroll to Contact</a>
+        <article class="portfolio-card">
+          <div class="portfolio-label">Location</div>
+          <h3>Find us</h3>
+          <p>
+            214 Main Street, Suite B<br />
+            Burleson, TX 76028<br />
+            Free parking behind the building.
+          </p>
+          <p style="margin-top: 0.8rem;">
+            Call / Text: <strong>(555) 123-0199</strong><br />
+            Instagram: @mainstreetbarberco
+          </p>
+        </article>
       </div>
+    </div>
+  </section>
 
-      <div id="contact" class="section" style="padding-top: 3rem;">
-        <h2 class="section-heading">Contact Form</h2>
-        <p class="section-subtitle">
-          A simple contact form so customers can book an appointment or ask a question.
-        </p>
-        <form>
-          <div>
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Your name" />
-          </div>
-          <div>
-            <label for="phone">Phone</label>
-            <input id="phone" type="tel" placeholder="Best number to reach you" />
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" placeholder="What can we help you with?"></textarea>
-          </div>
-          <button class="btn btn-primary" type="submit">Send</button>
-        </form>
-      </div>
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-kicker">Book</div>
+      <h2 class="section-heading">Grab a spot in the chair.</h2>
+      <p class="section-subtitle">
+        Send a quick message with your name, what you’re looking for, and when you’d like to come in.
+      </p>
+
+      <form>
+        <div>
+          <label for="c-name">Name</label>
+          <input id="c-name" type="text" placeholder="Your name" />
+        </div>
+        <div>
+          <label for="c-phone">Phone</label>
+          <input id="c-phone" type="tel" placeholder="Best number to reach you" />
+        </div>
+        <div>
+          <label for="c-time">Preferred day & time</label>
+          <input id="c-time" type="text" placeholder="Example: Friday after 4pm" />
+        </div>
+        <div>
+          <label for="c-msg">What are you looking for?</label>
+          <textarea id="c-msg" placeholder="Example: Skin fade + beard trim."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send request</button>
+      </form>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="container">
-    Starter demo by Love Crafted Digital.
+    Starter demo site designed by Love Crafted Digital for demonstration purposes.
   </div>
 </footer>
 </body>
 </html>
+
