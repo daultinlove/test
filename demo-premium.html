@@ -14,6 +14,8 @@
       <span>Skyline Performance Coaching</span>
     </div>
     <nav class="nav-links">
+      <a href="#brand">Branding</a>
+      <a href="#sales">Online Sales</a>
       <a href="#packages">Programs</a>
       <a href="#results">Results</a>
       <a href="#about">About</a>
@@ -25,36 +27,160 @@
 
 <main>
   <!-- HERO -->
-  <section class="hero hero--centered">
+  <section class="hero hero--split">
     <div class="container hero-grid">
+      <!-- COPY COLUMN -->
       <div>
-        <div class="hero-kicker">Leadership & mindset coaching</div>
+        <div class="hero-kicker">Premium build demo</div>
         <h1 class="hero-title">
-          Upgrade your career without <span>downgrading your life.</span>
+          For brands that want the <span>full package.</span>
         </h1>
         <p class="hero-subtitle">
-          Skyline Performance Coaching helps high performers build sustainable habits, clearer goals,
-          and a workload that doesn’t swallow everything else.
+          This Skyline Performance Coaching demo shows what our Premium package looks like:
+          a custom multi-page site, full brand system, and a streamlined online sales workflow.
         </p>
         <div class="hero-actions">
-          <a href="#book" class="btn btn-primary">Book a free strategy call</a>
-          <a href="#packages" class="btn btn-outline">Explore programs</a>
+          <a href="#book" class="btn btn-primary">Book a strategy call</a>
+          <a href="#sales" class="btn btn-outline">See sales flow</a>
         </div>
         <p class="hero-tagline">
-          1:1 coaching • Small group cohorts • Remote, video-based sessions.
+          Custom layout & animations • Brand suite & merch mockups • Online booking with Stripe.
         </p>
+      </div>
+
+      <!-- BRAND / LOGO CARD COLUMN -->
+      <aside class="hero-card--framed" style="padding: 1.5rem; background: var(--bg-panel);">
+        <div style="margin-bottom: 1.1rem;">
+          <img
+            src="Skyline.png"
+            alt="Skyline Performance Coaching logo"
+            style="width: 100%; border-radius: 1.1rem; display: block;"
+          />
+        </div>
+        <div class="hero-chip-row">
+          <span class="hero-chip">Primary logo</span>
+          <span class="hero-chip">Icon mark</span>
+          <span class="hero-chip">Typography system</span>
+          <span class="hero-chip">Color palette</span>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.85rem; color: #cbd0df;">
+          In a real build, we’d deliver a full logo suite (primary, secondary, icon),
+          usage guidelines, and layered files you can use across web, print, and merch.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- BRAND SYSTEM & MERCH -->
+  <section id="brand" class="section">
+    <div class="container">
+      <div class="section-kicker">Branding</div>
+      <h2 class="section-heading">Full brand system & merch-ready designs.</h2>
+      <p class="section-subtitle">
+        Premium projects don’t stop at a logo on your website. We create a system you can
+        plug into social, print, and your day-to-day marketing.
+      </p>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <div class="portfolio-label">Logo suite</div>
+          <h3>Primary, secondary & icon</h3>
+          <p>
+            Multiple lockups for horizontal, stacked, and badge styles so your brand
+            looks intentional on your site, invoices, slide decks, and more.
+          </p>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-label">Business collateral</div>
+          <h3>Business card & profile graphics</h3>
+          <p>
+            Ready-to-print business cards plus social profile and cover images for
+            LinkedIn, Instagram, and Facebook.
+          </p>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-label">Merch mockups</div>
+          <h3>Shirts, hats & stickers</h3>
+          <p>
+            Mockups that show how your logo lives on apparel and swag, so you can
+            confidently order real pieces when you’re ready.
+          </p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- PACKAGES -->
+  <!-- ONLINE SALES WORKFLOW -->
+  <section id="sales" class="section">
+    <div class="container">
+      <div class="section-kicker">Online sales</div>
+      <h2 class="section-heading">Online booking & payments, built in.</h2>
+      <p class="section-subtitle">
+        Your Premium site is set up for real revenue: clear offers, simple booking, and
+        secure payments powered by Stripe.
+      </p>
+
+      <div class="pricing-grid">
+        <!-- OFFER SUMMARY -->
+        <article class="pricing-card">
+          <div class="pricing-name">Offer suite</div>
+          <h3 class="pricing-title">Programs & checkouts</h3>
+          <p class="pricing-meta">
+            Example layout for how we’d structure your paid offers.
+          </p>
+          <ul class="pricing-list">
+            <li>Dedicated pages for each program (4–6 page site)</li>
+            <li>Clear pricing & inclusions</li>
+            <li>“Book now” or “Buy now” buttons wired to checkout</li>
+            <li>Confirmation screens & follow-up email copy</li>
+          </ul>
+        </article>
+
+        <!-- CHECKOUT / BOOKING UI DEMO -->
+        <article class="pricing-card pricing-card--highlight">
+          <div class="pricing-badge">Demo checkout</div>
+          <div class="pricing-name">Stripe flow</div>
+          <h3 class="pricing-title">Performance Track — Monthly</h3>
+          <p class="pricing-price">$750 <span>per month</span></p>
+          <p class="pricing-meta">
+            Example of how a real client could pay and schedule in one flow.
+          </p>
+
+          <form style="margin-top: 0.9rem;">
+            <label for="plan">Choose start date</label>
+            <input id="plan" type="date" />
+
+            <label for="email">Email for confirmation</label>
+            <input id="email" type="email" placeholder="you@example.com" />
+
+            <button type="button" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+              Pay &amp; book securely
+            </button>
+
+            <p style="margin-top: 0.5rem; font-size: 0.75rem; color: #9ca3b8;">
+              Payments processed via Stripe. In a real build, this button would connect
+              to your live Stripe checkout and calendar tool.
+            </p>
+          </form>
+        </article>
+      </div>
+
+      <p style="margin-top: 1.2rem; font-size: 0.8rem; color: #9ca3b8;">
+        This demo shows the layout and flow only—no real payments are processed here.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROGRAMS (COACHING PACKAGES) -->
   <section id="packages" class="section">
     <div class="container">
       <div class="section-kicker">Programs</div>
-      <h2 class="section-heading">Choose the level of support you need right now.</h2>
+      <h2 class="section-heading">Signature offers your site can sell on autopilot.</h2>
       <p class="section-subtitle">
-        Every program focuses on clarity, systems, and accountability—not just motivation that fades
-        in a week.
+        These example programs show how Premium sites present your services clearly and
+        drive visitors into your booking flow.
       </p>
 
       <div class="pricing-grid">
@@ -201,7 +327,8 @@
 
 <footer>
   <div class="container">
-    Premium demo site designed by Love Crafted Digital for demonstration purposes.
+    Premium demo site designed by Love Crafted Digital to showcase a full-package build:
+    multi-page layout, brand system, and online sales workflow (demo only, no live payments).
   </div>
 </footer>
 </body>
