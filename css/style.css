@@ -165,9 +165,18 @@ body.theme-moon::before {
 
 /* Header */
 .moon-header {
-  background: rgba(255, 249, 236, 0.95);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  background: rgba(3, 7, 18, 0.92);               /* dark glass */
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+/* nav links on dark header */
+.moon-header .nav-links a {
+  color: #e5e7eb;
+}
+
+.moon-header .nav-links a::after {
+  background: linear-gradient(90deg, #f4b942, #38bdf8);
 }
 
 .moon-header .nav-cta {
@@ -225,13 +234,21 @@ body.theme-moon::before {
 
 /* Hero card with logo */
 .moon-hero-card {
-  background: #fff9ec;
+  background: rgba(15, 23, 42, 0.92);             /* deep navy glass */
   border-radius: 1.5rem;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.5);
   display: grid;
   grid-template-rows: auto 1fr;
   overflow: hidden;
+  color: #e5e7eb;
 }
+
+.moon-hero-line,
+.moon-hero-meta {
+  color: #e5e7eb;
+}
+
 
 .moon-logo-wrapper {
   padding: 1.4rem 1.4rem 0.7rem;
@@ -312,11 +329,31 @@ body.theme-moon::before {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
 }
 
-.menu-title {
-  color: var(--moon-purple);
-  font-weight: 600;
-  margin-bottom: 0.25rem;
+.menu-card,
+.info-card,
+.review-card {
+  background: rgba(15, 23, 42, 0.88);             /* dark glass panels */
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  padding: 1.5rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.75);
+  color: #e5e7eb;
 }
+
+/* headings inside cards */
+.menu-title,
+.info-card h3,
+.review-card h3 {
+  color: #f4b942;                                  /* warm gold accent */
+}
+
+/* body text inside cards */
+.menu-card p,
+.info-card p,
+.review-card p {
+  color: #e5e7eb;
+}
+
 
 .menu-price {
   color: var(--moon-gold-dark);
@@ -351,12 +388,31 @@ body.theme-moon::before {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-.info-card {
-  background: #ffffff;
-  border: 1px solid #eedfb7;
-  padding: 1.6rem;
+.menu-card,
+.info-card,
+.review-card {
+  background: rgba(15, 23, 42, 0.88);             /* dark glass panels */
   border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  padding: 1.5rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.75);
+  color: #e5e7eb;
 }
+
+/* headings inside cards */
+.menu-title,
+.info-card h3,
+.review-card h3 {
+  color: #f4b942;                                  /* warm gold accent */
+}
+
+/* body text inside cards */
+.menu-card p,
+.info-card p,
+.review-card p {
+  color: #e5e7eb;
+}
+
 
 /* Reviews */
 .reviews-grid {
@@ -365,12 +421,31 @@ body.theme-moon::before {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+.menu-card,
+.info-card,
 .review-card {
-  background: #fffdf7;
-  border-radius: 14px;
-  border: 1px solid #f2e0ba;
-  padding: 1.4rem 1.5rem;
+  background: rgba(15, 23, 42, 0.88);             /* dark glass panels */
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  padding: 1.5rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.75);
+  color: #e5e7eb;
 }
+
+/* headings inside cards */
+.menu-title,
+.info-card h3,
+.review-card h3 {
+  color: #f4b942;                                  /* warm gold accent */
+}
+
+/* body text inside cards */
+.menu-card p,
+.info-card p,
+.review-card p {
+  color: #e5e7eb;
+}
+
 
 .review-quote {
   font-style: italic;
