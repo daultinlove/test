@@ -131,99 +131,197 @@ body.theme-barber {
 }
 /* ===== MOON TIM'S STEAK HOUSE THEME ===== */
 body.theme-moon {
-  --moon-purple: #3A0CA3;
-  --moon-gold: #F4B942;
-  --moon-gold-dark: #C58A25;
-  --moon-bg: #FFF9EC;
-  --moon-text: #231A12;
+  --moon-purple: #3a0ca3;
+  --moon-purple-deep: #24005e;
+  --moon-gold: #f4b942;
+  --moon-gold-dark: #c58a25;
+  --moon-bg: #fff9ec;
+  --moon-text: #231a12;
 
   background: var(--moon-bg);
   color: var(--moon-text);
 }
 
-.moon-hero {
-  padding: 5rem 0 3rem;
+/* Header */
+.moon-header {
+  background: rgba(255, 249, 236, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
 
-.moon-hero-grid {
+.moon-header .nav-cta {
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(58, 12, 163, 0.25);
+}
+
+/* HERO */
+.moon-hero {
+  position: relative;
+  padding: 4.5rem 0 3.5rem;
+  overflow: hidden;
+}
+
+.moon-hero-gradient {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(244, 185, 66, 0.15), transparent 55%),
+    radial-gradient(circle at 100% 0%, rgba(58, 12, 163, 0.45), #120420);
+  z-index: 0;
+}
+
+.moon-hero-inner {
+  position: relative;
+  z-index: 1;
   display: grid;
-  grid-template-columns: 1.6fr 1.4fr;
-  gap: 3rem;
-  align-items: center;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.3fr);
+  gap: 2.75rem;
+  align-items: stretch;
+}
+
+.moon-hero-copy {
+  color: #fefcf7;
+}
+
+.moon-title span {
+  background: linear-gradient(135deg, #4f46e5, #38bdf8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.moon-subtitle {
+  color: rgba(255, 253, 245, 0.88);
+}
+
+.moon-note {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: rgba(255, 248, 235, 0.9);
+}
+
+/* Hero card with logo */
+.moon-hero-card {
+  background: #fff9ec;
+  border-radius: 1.5rem;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
 }
 
 .moon-logo-wrapper {
+  padding: 1.4rem 1.4rem 0.7rem;
   display: flex;
   justify-content: center;
 }
 
 .moon-logo {
-  max-width: 270px;
+  max-width: 210px;
   width: 100%;
   border-radius: 12px;
-  background: white;
-  padding: 1.5rem;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+  background: #3a0ca3;
+  padding: 1rem;
 }
 
-.moon-kicker {
+.moon-hero-card-body {
+  padding: 0.75rem 1.4rem 1.4rem;
+}
+
+.moon-hero-tag {
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--moon-gold-dark);
-  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  color: var(--moon-purple);
   margin-bottom: 0.4rem;
 }
 
-.moon-title span {
-  color: var(--moon-gold);
+.moon-hero-line {
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
 }
 
+.moon-hero-meta {
+  font-size: 0.85rem;
+  color: #6c5333;
+}
+
+/* Buttons */
 .btn-primary-moon {
   background: linear-gradient(135deg, var(--moon-purple), var(--moon-gold));
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  color: #fff;
+  padding: 0.75rem 1.6rem;
+  border-radius: 999px;
+  border: none;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
 }
 
 .btn-outline-moon {
-  padding: 0.75rem 1.5rem;
-  color: var(--moon-purple);
+  padding: 0.75rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: #fefcf7;
   background: transparent;
-  border: 2px solid var(--moon-purple);
-  border-radius: 8px;
 }
 
-.moon-divider {
-  border-top: 2px solid rgba(0,0,0,0.08);
-  margin: 3rem 0;
+/* Sections */
+.moon-section {
+  padding: 3.5rem 0;
 }
 
+.moon-section-dark {
+  background: radial-gradient(circle at 10% 0%, #3a0ca3, #120420);
+  color: #fdecc8;
+}
+
+/* Menu cards */
 .menu-grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
 .menu-card {
   background: #ffffff;
-  padding: 1.5rem;
-  border-radius: 12px;
+  border-radius: 16px;
   border: 1px solid #f0e1bc;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
 }
 
 .menu-title {
   color: var(--moon-purple);
-  font-weight: bold;
-  margin-bottom: 0.3rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
 }
 
 .menu-price {
   color: var(--moon-gold-dark);
-  font-weight: bold;
-  margin-bottom: 0.4rem;
+  font-weight: 600;
+  margin-bottom: 0.45rem;
 }
 
+/* Specials */
+.specials-grid {
+  display: grid;
+  gap: 1.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.special-card {
+  background: rgba(18, 4, 32, 0.7);
+  border-radius: 16px;
+  padding: 1.4rem 1.5rem;
+  border: 1px solid rgba(252, 211, 77, 0.35);
+}
+
+.special-meta {
+  font-size: 0.8rem;
+  color: rgba(252, 211, 77, 0.9);
+  margin-top: 0.5rem;
+}
+
+/* Info cards */
 .two-col-grid {
   display: grid;
   gap: 2.5rem;
@@ -233,25 +331,51 @@ body.theme-moon {
 .info-card {
   background: #ffffff;
   border: 1px solid #eedfb7;
-  padding: 1.5rem;
-  border-radius: 12px;
+  padding: 1.6rem;
+  border-radius: 16px;
 }
 
+/* Reviews */
+.reviews-grid {
+  display: grid;
+  gap: 1.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.review-card {
+  background: #fffdf7;
+  border-radius: 14px;
+  border: 1px solid #f2e0ba;
+  padding: 1.4rem 1.5rem;
+}
+
+.review-quote {
+  font-style: italic;
+}
+
+/* Reservation */
 .reservation-form input {
   width: 100%;
   padding: 0.75rem;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid #e0cfa5;
   margin-bottom: 1rem;
 }
 
-.moon-footer {
-  padding: 2rem 0;
-  text-align: center;
-  background: var(--moon-purple);
-  color: #fff;
-  margin-top: 4rem;
+.reservation-note {
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
 }
+
+/* Footer */
+.moon-footer {
+  background: #120420;
+  color: #fef9ec;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
 
 /* Warm, cozy restaurant theme */
 body.theme-restaurant {
