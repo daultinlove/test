@@ -2,8 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Love Crafted Digital — Web Design & Branding</title>
+  <title>Love Crafted Digital — Small Business Web Design & Branding</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO META -->
+  <meta name="description"
+        content="Love Crafted Digital builds fast, clean websites and branding for small businesses, BBQ trucks, barbers, and service pros who want to look legit and get more customers." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Love Crafted Digital — Small Business Web Design & Branding" />
+  <meta property="og:description"
+        content="Fast, clean websites and branding for real small businesses in DFW and beyond." />
+  <meta property="og:url" content="https://daultinlove.github.io/test/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (add favicon.png to your repo root) -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -49,11 +64,11 @@
         <div class="hero-card-tag">Recent project</div>
         <h2 class="hero-card-title">Jay’s KickAsh BBQ</h2>
         <p>
-          Full website and branding for an Oklahoma BBQ food truck—menu, schedule, and strong visual
-          identity designed to stand out at events and online.
+          Full website and branding for an Oklahoma BBQ truck serving Texas events—menu, schedule,
+          and a bold visual identity that finally matches the trailer.
         </p>
         <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #cbd0df;">
-          “I wanted a site that matched the trailer wrap and actual brand. That’s exactly what I got.”
+          “Oklahoma BBQ truck, Texas events. The site finally matches our trailer and brand.”
         </p>
       </aside>
     </div>
@@ -175,6 +190,8 @@
   <section id="services" class="section">
     <div class="container">
       <div class="section-kicker">Services</div>
+    </div>
+    <div class="container">
       <h2 class="section-heading">Everything you need to look legit online.</h2>
 
       <div class="portfolio-grid">
@@ -227,22 +244,25 @@
         game plan and timeline.
       </p>
 
-      <form>
+      <!-- CONTACT FORM (FORMSPREE) -->
+      <!-- Replace YOUR_FORM_ID_HERE with your actual Formspree form ID -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
         <div>
           <label for="c-name">Name</label>
-          <input id="c-name" type="text" placeholder="Your name" />
+          <input id="c-name" name="name" type="text" placeholder="Your name" required />
         </div>
         <div>
           <label for="c-email">Email</label>
-          <input id="c-email" type="email" placeholder="you@example.com" />
+          <input id="c-email" name="email" type="email" placeholder="you@example.com" required />
         </div>
         <div>
           <label for="c-business">Business name & type</label>
-          <input id="c-business" type="text" placeholder="Example: Jay’s KickAsh BBQ — food truck" />
+          <input id="c-business" name="business" type="text"
+                 placeholder="Example: Jay’s KickAsh BBQ — food truck" />
         </div>
         <div>
           <label for="c-package">Interested package</label>
-          <select id="c-package">
+          <select id="c-package" name="package">
             <option>Not sure yet</option>
             <option>Starter — $750</option>
             <option>Standard — $1,650</option>
@@ -251,7 +271,8 @@
         </div>
         <div>
           <label for="c-message">What do you need your website to do?</label>
-          <textarea id="c-message" placeholder="Example: take orders, show menu, collect leads, book calls, etc."></textarea>
+          <textarea id="c-message" name="message"
+                    placeholder="Example: take orders, show menu, collect leads, book calls, etc."></textarea>
         </div>
         <button class="btn btn-primary" type="submit">Send message</button>
       </form>
