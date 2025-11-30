@@ -8,7 +8,7 @@
 </head>
 
 <body class="theme-moon">
-<header>
+<header class="moon-header">
   <div class="container nav">
     <div class="nav-logo">
       <div class="nav-logo-badge">MT</div>
@@ -16,9 +16,10 @@
     </div>
     <nav class="nav-links">
       <a href="#menu">Menu</a>
-      <a href="#hours">Hours</a>
-      <a href="#about">About</a>
-      <a href="#reservation">Reserve</a>
+      <a href="#specials">Tonight’s Specials</a>
+      <a href="#hours">Visit</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#reservation" class="nav-cta">Reserve</a>
       <a href="index.html">Back to Love Crafted</a>
     </nav>
   </div>
@@ -27,8 +28,10 @@
 <main>
   <!-- HERO -->
   <section class="moon-hero">
-    <div class="container moon-hero-grid">
-      <div>
+    <div class="moon-hero-gradient"></div>
+
+    <div class="container moon-hero-inner">
+      <div class="moon-hero-copy">
         <div class="hero-kicker moon-kicker">Est. 1972 • Burleson, TX</div>
 
         <h1 class="hero-title moon-title">
@@ -36,7 +39,7 @@
         </h1>
 
         <p class="hero-subtitle moon-subtitle">
-          Moon Tim's Steak House brings deep-South cooking, slow-aged steaks, and 
+          Moon Tim's Steak House brings deep-South cooking, slow-aged steaks, and
           golden fire-grilled flavor together under one warm, celestial roof.
         </p>
 
@@ -44,56 +47,164 @@
           <a href="#reservation" class="btn btn-primary-moon">Reserve a Table</a>
           <a href="#menu" class="btn btn-outline-moon">View the Menu</a>
         </div>
+
+        <p class="moon-note">
+          Open for dinner Monday–Saturday • Closed Sunday (even the moon rests).
+        </p>
       </div>
 
-      <div class="moon-logo-wrapper">
-        <img
-          src="Moon.png"
-          alt="Moon Tim's Steak House Logo"
-          class="moon-logo"
-        />
-      </div>
-
+      <aside class="moon-hero-card">
+        <div class="moon-logo-wrapper">
+          <img
+            src="moon-tims.png"
+            alt="Moon Tim's Steak House Logo"
+            class="moon-logo"
+          />
+        </div>
+        <div class="moon-hero-card-body">
+          <div class="moon-hero-tag">Tonight at Moon Tim’s</div>
+          <p class="moon-hero-line">
+            Wood-fired steaks, house-made sauces, and desserts served until close.
+          </p>
+          <p class="moon-hero-meta">
+            215 Crescent Lane • Burleson, TX<br />
+            <strong>(555) 987-4421</strong>
+          </p>
+        </div>
+      </aside>
     </div>
   </section>
 
-  <div class="moon-divider"></div>
-
   <!-- MENU SECTION -->
-  <section id="menu" class="moon-section">
+<section id="menu" class="moon-section">
+  <div class="container">
+    <div class="moon-kicker">Menu</div>
+    <h2 class="moon-heading">Fire-Grilled Favorites</h2>
+    <p class="moon-subtitle" style="max-width: 36rem; margin-bottom: 1.8rem;">
+      All steaks are hand-cut in house, seasoned with our moon-dust blend, and finished over open flame.
+      Chicken entrées and sides are built to match.
+    </p>
+
+    <div class="menu-grid">
+
+      <!-- STEAKS -->
+      <article class="menu-card">
+        <p class="menu-label">Steak</p>
+        <h3 class="menu-title">Moonlit Ribeye</h3>
+        <p class="menu-price">$34</p>
+        <p class="menu-desc">
+          14oz hand-cut ribeye with deep char, brushed with roasted garlic butter and finished with flaky salt.
+        </p>
+      </article>
+
+      <article class="menu-card">
+        <p class="menu-label">Steak</p>
+        <h3 class="menu-title">Tim’s Signature Sirloin</h3>
+        <p class="menu-price">$28</p>
+        <p class="menu-desc">
+          Lean, bold sirloin grilled hot and fast, served with crispy onion straws and house steak sauce.
+        </p>
+      </article>
+
+      <article class="menu-card">
+        <p class="menu-label">Steak</p>
+        <h3 class="menu-title">Celestial Filet</h3>
+        <p class="menu-price">$38</p>
+        <p class="menu-desc">
+          Center-cut filet mignon, seared in cast iron, topped with herb compound butter and a red wine reduction.
+        </p>
+      </article>
+
+      <!-- CHICKEN & MAINS -->
+      <article class="menu-card">
+        <p class="menu-label">Chicken</p>
+        <h3 class="menu-title">Starfire Chicken</h3>
+        <p class="menu-price">$24</p>
+        <p class="menu-desc">
+          Flame-grilled marinated chicken breast with charred lemon, served over garlic whipped potatoes.
+        </p>
+      </article>
+
+      <article class="menu-card">
+        <p class="menu-label">Chicken</p>
+        <h3 class="menu-title">Southern Moon Fried Chicken</h3>
+        <p class="menu-price">$22</p>
+        <p class="menu-desc">
+          Buttermilk-brined, pressure-fried thighs and drumsticks with hot honey drizzle and house slaw.
+        </p>
+      </article>
+
+      <!-- SIDES -->
+      <article class="menu-card">
+        <p class="menu-label">Side</p>
+        <h3 class="menu-title">Garlic Whipped Potatoes</h3>
+        <p class="menu-price">$7</p>
+        <p class="menu-desc">
+          Smooth Yukon golds with roasted garlic and brown butter.
+        </p>
+      </article>
+
+      <article class="menu-card">
+        <p class="menu-label">Side</p>
+        <h3 class="menu-title">Ember-Roasted Vegetables</h3>
+        <p class="menu-price">$8</p>
+        <p class="menu-desc">
+          Seasonal veggies roasted on the grill, finished with lemon and smoked sea salt.
+        </p>
+      </article>
+
+      <article class="menu-card">
+        <p class="menu-label">Side</p>
+        <h3 class="menu-title">Skillet Cornbread</h3>
+        <p class="menu-price">$6</p>
+        <p class="menu-desc">
+          Cast-iron cornbread with honey butter and a hint of jalapeño.
+        </p>
+      </article>
+
+      <article class="menu-card">
+        <p class="menu-label">Side</p>
+        <h3 class="menu-title">Moonlit Mac &amp; Cheese</h3>
+        <p class="menu-price">$9</p>
+        <p class="menu-desc">
+          Three-cheese baked mac with smoked cheddar, crisp bacon, and toasted crumbs.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- TONIGHT'S SPECIALS -->
+  <section id="specials" class="moon-section moon-section-dark">
     <div class="container">
-      <div class="moon-kicker">Menu</div>
-      <h2 class="moon-heading">Fire-Grilled Favorites</h2>
+      <div class="moon-kicker">Tonight’s Specials</div>
+      <h2 class="moon-heading moon-heading-light">Under Tonight’s Moon</h2>
 
-      <div class="menu-grid">
-
-        <article class="menu-card">
-          <h3 class="menu-title">Moonlit Ribeye</h3>
-          <p class="menu-price">$34</p>
-          <p class="menu-desc">14oz hand-cut ribeye, grilled under open flame and brushed with garlic butter.</p>
+      <div class="specials-grid">
+        <article class="special-card">
+          <h3>Lunar Surf & Turf</h3>
+          <p class="special-desc">
+            10oz sirloin paired with butter-poached shrimp, served with moon-dusted potatoes.
+          </p>
+          <p class="special-meta">Limited plates • Market price</p>
         </article>
 
-        <article class="menu-card">
-          <h3 class="menu-title">Tim’s Signature Sirloin</h3>
-          <p class="menu-price">$28</p>
-          <p class="menu-desc">Lean, bold, and full of deep sear — our classic cut since 1972.</p>
+        <article class="special-card">
+          <h3>Smoked Moon Mac</h3>
+          <p class="special-desc">
+            Cast-iron mac & cheese with smoked cheddar, crisp bacon, and toasted crumbs.
+          </p>
+          <p class="special-meta">Add to any entrée for $9</p>
         </article>
-
-        <article class="menu-card">
-          <h3 class="menu-title">Celestial Filet</h3>
-          <p class="menu-price">$38</p>
-          <p class="menu-desc">Tender center-cut perfection with a golden crust.</p>
-        </article>
-
       </div>
-
     </div>
   </section>
 
   <!-- HOURS + ABOUT -->
   <section id="hours" class="moon-section">
     <div class="container">
-
       <div class="moon-kicker">Visit</div>
       <h2 class="moon-heading">Hours & Story</h2>
 
@@ -101,24 +212,57 @@
         <article class="info-card">
           <h3>Hours</h3>
           <p>
-            Mon–Thu: 4pm – 10pm<br>
-            Friday: 4pm – 11pm<br>
-            Saturday: 12pm – 11pm<br>
-            Sunday: Closed (We sleep like the moon.)
+            Mon–Thu: 4pm – 10pm<br />
+            Friday: 4pm – 11pm<br />
+            Saturday: 12pm – 11pm<br />
+            Sunday: Closed (we sleep like the moon).
+          </p>
+          <p class="info-note">
+            Last seating 30 minutes before close.
           </p>
         </article>
 
         <article class="info-card" id="about">
           <h3>Our Story</h3>
           <p>
-            Moon Tim's began as a roadside grill shack lit only by lanterns and a 
-            dream. Today, we still cook with the same passion and flame — just with 
-            better lighting.
+            Moon Tim's began as a roadside grill shack lit only by lanterns and a dream.
+            Today, we still cook with the same passion and flame — just with better lighting.
           </p>
           <p>
-            From the moon-marked ribeye to our golden crust signature filet, 
-            every plate is crafted with tradition and fire-kissed flavor.
+            From the moon-marked ribeye to our golden crust signature filet, every plate is
+            crafted with tradition, fire, and a little bit of night sky magic.
           </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="moon-section">
+    <div class="container">
+      <div class="moon-kicker">Guests are saying</div>
+      <h2 class="moon-heading">What dinner under our moon feels like.</h2>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <p class="review-quote">
+            “Best ribeye I’ve had in years. The crust, the garlic butter, everything was on point.”
+          </p>
+          <p class="review-meta">— Jordan R.</p>
+        </article>
+
+        <article class="review-card">
+          <p class="review-quote">
+            “Cozy, warm, and just the right amount of fancy. Perfect date-night spot.”
+          </p>
+          <p class="review-meta">— Mia L.</p>
+        </article>
+
+        <article class="review-card">
+          <p class="review-quote">
+            “Service was incredible and the specials board alone is worth the trip.”
+          </p>
+          <p class="review-meta">— Devin S.</p>
         </article>
       </div>
     </div>
@@ -149,16 +293,18 @@
         </div>
         <button class="btn btn-primary-moon">Request Reservation</button>
       </form>
+
+      <p class="reservation-note">
+        This form can link directly to your real booking system (OpenTable, Yelp, in-house, etc.).
+      </p>
     </div>
   </section>
-
 </main>
 
 <footer class="moon-footer">
   <div class="container">
-    Demo Standard site designed by Love Crafted Digital to showcase a real-world restaurant layout.
+    Standard demo site designed by Love Crafted Digital to showcase a more advanced restaurant layout.
   </div>
 </footer>
-
 </body>
 </html>
