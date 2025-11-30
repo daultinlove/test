@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pricing — Love Crafted Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* PAGE-SPECIFIC POLISH */
+    .pricing-hero {
+      padding: 4rem 0 3rem;
+      text-align: center;
+      background:
+        radial-gradient(circle at 0 0, rgba(56,189,248,0.25), transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(34,197,94,0.25), transparent 55%),
+        #020617;
+    }
+    .pricing-hero h1 {
+      font-size: clamp(2.2rem, 4vw, 3rem);
+      margin-bottom: 1rem;
+    }
+    .pricing-hero p {
+      max-width: 650px;
+      margin: 0.5rem auto 0;
+      color: #cbd0df;
+    }
+
+    /* Comparison Table */
+    .compare-table {
+      margin-top: 3rem;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      background: #0d1117;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 1rem;
+      border-bottom: 1px solid #1f232b;
+      font-size: 0.9rem;
+    }
+    th {
+      background: #11141b;
+      color: #e5e7eb;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.8rem;
+    }
+    td {
+      color: #d1d5db;
+    }
+    .yes {
+      color: #22c55e;
+      font-weight: bold;
+    }
+    .no {
+      color: #ef4444;
+    }
+
+    /* FAQ */
+    .faq {
+      margin-top: 4rem;
+    }
+    .faq h3 {
+      font-size: 1.2rem;
+      margin: 1.2rem 0 0.5rem;
+    }
+    .faq p {
+      color: #cbd5e1;
+      line-height: 1.55;
+    }
+
+    /* CTA */
+    .cta-block {
+      margin: 4rem 0;
+      padding: 3rem;
+      background: #11141b;
+      border-radius: 14px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="container nav">
+    <div class="nav-logo">
+      <div class="nav-logo-badge">LC</div>
+      <span>Love Crafted Digital</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#compare">Compare</a>
+      <a href="#faq">FAQ</a>
+      <a href="#cta">Start</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="pricing-hero">
+    <div class="container">
+      <h1>Clear, Honest Pricing</h1>
+      <p>Choose the package that fits your business. No hidden fees. No “starting at” games. Just real work that gets results.</p>
+    </div>
+  </section>
+
+  <!-- PACKAGES (reusing your existing cards) -->
+  <section id="packages" class="section">
+    <div class="container">
+      <div class="section-kicker">Packages</div>
+      <h2 class="section-heading">What you get at each level</h2>
+
+      <div class="pricing-grid">
+
+        <!-- STARTER -->
+        <article class="pricing-card">
+          <div class="pricing-name">Starter</div>
+          <h3 class="pricing-title">Launch</h3>
+          <p class="pricing-price">$750 <span>one-time</span></p>
+          <ul class="pricing-list">
+            <li>1–3 pages</li>
+            <li>Mobile responsive</li>
+            <li>Basic SEO</li>
+            <li>Google Business setup</li>
+            <li>1 revision</li>
+            <li>Handoff video</li>
+          </ul>
+        </article>
+
+        <!-- STANDARD -->
+        <article class="pricing-card pricing-card--highlight">
+          <div class="pricing-badge">Best Value</div>
+          <div class="pricing-name">Standard</div>
+          <h3 class="pricing-title">Stand Out</h3>
+          <p class="pricing-price">$1,650 <span>one-time</span></p>
+          <ul class="pricing-list">
+            <li>Everything in Starter</li>
+            <li>Up to 7 pages</li>
+            <li>Logo suite (primary + alt)</li>
+            <li>Brand PDF</li>
+            <li>Business cards & social templates</li>
+            <li>Booking/menu setup</li>
+            <li>2 revisions</li>
+          </ul>
+        </article>
+
+        <!-- PREMIUM -->
+        <article class="pricing-card">
+          <div class="pricing-name">Premium</div>
+          <h3 class="pricing-title">Full Brand Build</h3>
+          <p class="pricing-price">$3,200–$4,500 <span>project</span></p>
+          <ul class="pricing-list">
+            <li>Everything in Standard</li>
+            <li>Custom animations</li>
+            <li>Full brand system</li>
+            <li>Merch mockups</li>
+            <li>Online ordering / booking</li>
+            <li>Stripe integration</li>
+            <li>Advanced SEO</li>
+            <li>30 days support</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON GRID -->
+  <section id="compare" class="section">
+    <div class="container">
+      <div class="section-kicker">Compare</div>
+      <h2 class="section-heading">See everything side by side</h2>
+
+      <div class="compare-table">
+        <table>
+          <tr>
+            <th>Feature</th>
+            <th>Starter</th>
+            <th>Standard</th>
+            <th>Premium</th>
+          </tr>
+          <tr><td>Number of pages</td><td>1–3</td><td>Up to 7</td><td>Unlimited</td></tr>
+          <tr><td>Branding included</td><td><span class="no">✗</span></td><td class="yes">✓ Basic Suite</td><td class="yes">✓ Full System</td></tr>
+          <tr><td>Booking / Menu Setup</td><td><span class="no">✗</span></td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Stripe Payments</td><td><span class="no">✗</span></td><td><span class="no">✗</span></td><td class="yes">✓</td></tr>
+          <tr><td>Revisions</td><td>1</td><td>2</td><td>Unlimited*</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq">
+    <div class="container">
+      <div class="section-kicker">FAQ</div>
+      <h2 class="section-heading">Frequently Asked Questions</h2>
+
+      <h3>How long does a project take?</h3>
+      <p>Starter: 3–5 days • Standard: 5–10 days • Premium: 2–4 weeks depending on scope.</p>
+
+      <h3>Do you offer payment plans?</h3>
+      <p>Yes. Standard & Premium allow 50% upfront / 50% on completion.</p>
+
+      <h3>Do you host the website?</h3>
+      <p>You keep full control. I can set up hosting for you or connect to your existing provider.</p>
+
+      <h3>What if I don’t have photos?</h3>
+      <p>I use premium stock, or we can arrange a photoshoot for Premium clients.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Ready to start your project?</h2>
+        <p style="margin-bottom: 1.2rem;">Tell me your business goals and I’ll recommend the perfect package.</p>
+        <a href="index.html#contact" class="btn btn-primary">Start Now</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Love Crafted Digital
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+</body>
+</html>
