@@ -554,6 +554,15 @@ header {
   letter-spacing: 0.03em;
 }
 
+/* 🔥 navbar logo image (new) */
+.nav-logo-img {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
 .nav-logo-badge {
   width: 32px;
   height: 32px;
