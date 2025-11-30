@@ -805,3 +805,77 @@ footer {
     display: none; /* simple hide for now */
   }
 }
+
+/* =========================
+   DARK & MOODY MOON TIM'S
+   (overrides)
+========================= */
+
+body.theme-moon {
+  /* keep background from earlier, just tweak text color */
+  color: #e5e7eb;
+}
+
+/* Dark, glassy header on top of the moon sky */
+body.theme-moon .moon-header {
+  background: rgba(3, 7, 18, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+body.theme-moon .moon-header .nav-links a {
+  color: #e5e7eb;
+}
+
+/* Hero: let the moon + gradient feel darker & cinematic */
+body.theme-moon .moon-hero {
+  background: transparent;
+  box-shadow: none;
+}
+
+body.theme-moon .moon-hero-gradient {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(244, 185, 66, 0.08), transparent 55%),
+    radial-gradient(circle at 100% 0%, rgba(58, 12, 163, 0.55), rgba(3, 7, 18, 0.9));
+}
+
+/* Headings and text for dark mode */
+body.theme-moon .moon-heading {
+  color: #f9fafb;
+}
+
+body.theme-moon .moon-subtitle,
+body.theme-moon .moon-note {
+  color: #cbd5f5;
+}
+
+/* Turn white cards into dark glass panels */
+body.theme-moon .menu-card,
+body.theme-moon .info-card,
+body.theme-moon .review-card {
+  background: rgba(15, 23, 42, 0.86);          /* dark navy glass */
+  border: 1px solid rgba(148, 163, 184, 0.45); /* soft slate border */
+  color: #e5e7eb;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.75);
+}
+
+/* Keep inner headings warm/gold for contrast */
+body.theme-moon .menu-title,
+body.theme-moon .info-card h3 {
+  color: #f4b942;
+}
+
+/* Hero side card with logo should also go dark */
+body.theme-moon .moon-hero-card {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+body.theme-moon .moon-hero-meta {
+  color: #e5e7eb;
+}
+
+/* Sections themselves sit on transparent so the moon shows through */
+body.theme-moon .moon-section {
+  background: transparent;
+}
